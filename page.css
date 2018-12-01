@@ -1,0 +1,9 @@
+body {
+    height: 100%;
+    display: block;
+    background: #e74c3c url(winterforest.png) repeat-x 10px 340px;
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+}
+
