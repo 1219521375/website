@@ -25,7 +25,7 @@
                 minSize		: 10,
                 maxSize		: 20,
                 newOn		: 1000,
-                flakeColor	: "#AFDAEF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
+                flakeColor	: "#FFFFFF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
             },
             options	= $.extend({}, defaults, options);
             var interval= setInterval( function(){
@@ -54,13 +54,28 @@
             $.fn.snow({ 
                 minSize: 5, /* 定义雪花最小尺寸 */
                 maxSize: 50,/* 定义雪花最大尺寸 */
-                newOn: 300  /* 定义密集程度，数字越小越密集 */
+                newOn: 220  /* 定义密集程度，数字越小越密集 */
             });
         });
         </script>
-        <img src="tree.png" width="500px" height="650px" style="position: absolute;left: 540px;top: 50px">
-        <p style="font-family:'Times New Roman', Times, serif;font-size: 50px;position: absolute;left: 450px;top: 460px">Click it!</p>
-        <img src="giftbox.png" onclick="" width="400px" height="400px" style="position: absolute;left: 570px;top: 390px">
+    <div id="demo">
+        <img src="tree.png" width="500px" height="650px" style="position: absolute;left: 950px;top: 70px">
+        <p id="click" style="font-family:'Times New Roman', Times, serif;font-size: 50px;position: absolute;left: 450px;top: 460px">Click it!</p>
+        
+        <div class="box">
+            <img id="gift" src="giftbox.png" width="500px" height="500px" style="position: absolute;left: 550px;top: 250px">
+            <div id="fadeIn" style="display:none">
+                <img id="card" src="Card2.png" width="900px" height="600px">
+            </div>
+        </div>
+        <p id="p1" style="display:none;font-family:'Times New Roman', Times, serif;font-size: 50px;position: absolute;left: 180px;top: 100px">最最最美丽漂亮活泼可爱的<br />五仙女青儿</p>
+        <p id="p2" style="display:none;font-family:'Times New Roman', Times, serif;font-size: 50px;position: absolute;left: 250px;top: 230px">圣诞快乐呀~</p>
+
+    </div>
+
+    <audio src="JingleBells.mp3" id="myaudio" controls="controls" loop="false" hidden="true">
+
+        </audio>
 
 </body>
 </html>
